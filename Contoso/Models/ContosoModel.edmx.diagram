@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8c5e99aa3ec14ee4b6919bf5d2d8d896" Name="Diagram1" ZoomLevel="62">
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimAccount" Width="1.5" PointX="6.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimChannel" Width="1.5" PointX="3.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimCurrency" Width="1.5" PointX="3.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimCustomer" Width="1.5" PointX="6.75" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimDate" Width="1.5" PointX="0.75" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimEmployee" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimEntity" Width="1.5" PointX="6.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimGeography" Width="1.5" PointX="1.5" PointY="44.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimMachine" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimOutage" Width="1.5" PointX="0.75" PointY="28.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimProduct" Width="1.5" PointX="3.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimProductCategory" Width="1.5" PointX="1.5" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimProductSubcategory" Width="1.5" PointX="1.5" PointY="34.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimPromotion" Width="1.5" PointX="3.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimSalesTerritory" Width="1.5" PointX="3.75" PointY="51" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimScenario" Width="1.5" PointX="6.75" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.DimStore" Width="1.5" PointX="3.75" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.FactExchangeRate" Width="1.5" PointX="3" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.FactInventory" Width="1.5" PointX="6" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.FactITMachine" Width="1.5" PointX="3" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.FactITSLA" Width="1.5" PointX="3" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.FactOnlineSale" Width="1.5" PointX="9" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.FactSale" Width="1.5" PointX="6" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.FactSalesQuota" Width="1.5" PointX="6" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.FactStrategyPlan" Width="1.5" PointX="9" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContosoRetailDWModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactStrategyPlan_DimAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSales_DimChannel" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSalesQuota_DimChannel" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactExchangeRate_DimCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactInventory_DimCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactOnlineSales_DimCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSales_DimCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSalesQuota_DimCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactStrategyPlan_DimCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_DimCustomer_DimGeography" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactOnlineSales_DimCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactExchangeRate_DimDate" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactInventory_DimDate" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactITMachine_DimDate" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactITSLA_DimDate" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactOnlineSales_DimDate" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSales_DimDate" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSalesQuota_DimDate" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactStrategyPlan_DimDate" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_DimEmployee_DimEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactStrategyPlan_DimEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_DimSalesTerritory_DimGeography" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_DimStore_DimGeography" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_DimMachine_DimStore" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactITMachine_DimMachine" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactITSLA_DimMachine" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactITSLA_DimOutage" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_DimProduct_DimProductSubcategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactInventory_DimProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactOnlineSales_DimProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSales_DimProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSalesQuota_DimProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_DimProductSubcategory_DimProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactStrategyPlan_DimProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactOnlineSales_DimPromotion" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSales_DimPromotion" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSalesQuota_DimScenario" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactStrategyPlan_DimScenario" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactInventory_DimStore" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactITSLA_DimStore" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactOnlineSales_DimStore" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSales_DimStore" ManuallyRouted="false" />
+        <AssociationConnector Association="ContosoRetailDWModel.FK_FactSalesQuota_DimStore" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
